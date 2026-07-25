@@ -8,6 +8,16 @@ A Flutter package for in-depth cryptographic TLS/SSL vulnerability auditing and 
 - **Detailed Security Reports**: Structured outputs for TLS security compliance.
 - **Mobile Compatible**: Runs seamlessly within Flutter applications.
 
+## 🌐 Official Platform & Command Center / رابط منصة التطبيق
+
+- **Website / Repository**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
+
+## ⚖️ Ownership & Intellectual Property / حقوق الملكية الفكرية
+
+جميع حقوق الملكية والتطوير والبرمجة محفوظة رسمياً للمطور الرئيسي:
+**مهندس البرمجيات / عبد الله فوزي علي محمود**
+(Software Engineer: **Abdallah Fawzi Ali Mahmoud**)
+
 ## 🚀 Installation
 
 Add this package to your Flutter project's `pubspec.yaml`:
@@ -16,8 +26,8 @@ Add this package to your Flutter project's `pubspec.yaml`:
 dependencies:
   testssl_engine:
     git:
-      url: https://github.com/AbdoFawzi777/redops-hub.git
-      path: packages/testssl_engine
+      url: https://github.com/AbdoFawzi777/testssl_engine.git
+      ref: main
 ```
 
 ## 📝 Usage Example
@@ -36,5 +46,5 @@ Distributed under the MIT License.
 
 ## 🤝 Contributing & Support
 
-- **Repository**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
-- **Report Issues**: [https://github.com/AbdoFawzi777/redops-hub/issues](https://github.com/AbdoFawzi777/redops-hub/issues)
+- **Main Repository**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
+- **Report Issues**: [https://github.com/AbdoFawzi777/testssl_engine/issues](https://github.com/AbdoFawzi777/testssl_engine/issues)
