@@ -1,52 +1,66 @@
 # TestSSL Engine (`testssl_engine`)
 
-A Flutter package for in-depth cryptographic TLS/SSL vulnerability auditing and security verification.
+> Comprehensive TLS/SSL Security Evaluator  
+> **Author & Original Architect:** [Abdallah Fawzi Ali Mahmoud](https://github.com/AbdoFawzi777)  
+> **Part of the RedOps Hub Monorepo Suite**
 
-## ✨ Features
+---
 
-- **Cryptographic Audit**: Checks TLS protocols, cipher suites, and cryptographic flaws.
-- **Detailed Security Reports**: Structured outputs for TLS security compliance.
-- **Mobile Compatible**: Runs seamlessly within Flutter applications.
+## 📌 Overview
+`testssl_engine` is a production-grade, standalone Flutter package engineered for high-performance mobile security auditing. Built with pure Dart and native Flutter MethodChannels/Isolates, it delivers enterprise-level capability directly on Android & iOS devices without relying on external Linux command-line dependencies.
 
-## 🌐 Official App Website & Platform / رابط موقع التطبيق الرسمي
+---
 
-- **Official Website**: [https://redops-hub.web.app/](https://redops-hub.web.app/)
-- **GitHub Monorepo**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
+## 🚀 New Capabilities & Features (v2.0)
+- **Security Grading System:** Provides overall TLS/SSL security grade (A+ to F rating) based on industry standards.
+- **ALPN & Protocol Negotiation:** Tests HTTP/2, ALPN, and NPN protocol negotiation capabilities.
+- **Client Simulation:** Simulates legacy and modern mobile/desktop clients to test handshake compatibility.
+- **Executive PDF / JSON Reports:** Exports structured JSON and clean security assessment summaries.
 
-## ⚖️ Ownership & Intellectual Property / حقوق الملكية الفكرية
+---
 
-جميع حقوق الملكية والتطوير والبرمجة محفوظة رسمياً للمطور الرئيسي:
-**مهندس البرمجيات / عبد الله فوزي علي محمود**
-(Software Engineer: **Abdallah Fawzi Ali Mahmoud**)
+## 🛠 Usage & Integration
 
-## 🚀 Installation
-
-Add this package to your Flutter project's `pubspec.yaml`:
+Add `testssl_engine` to your Flutter `pubspec.yaml`:
 
 ```yaml
 dependencies:
   testssl_engine:
-    git:
-      url: https://github.com/AbdoFawzi777/testssl_engine.git
-      ref: main
+    path: ../packages/testssl_engine
 ```
 
-## 📝 Usage Example
+### Basic Example
 
 ```dart
 import 'package:testssl_engine/testssl_engine.dart';
 
 void main() async {
-  print('testssl_engine initialized successfully.');
+  final engine = TestSSLEngine();
+  
+  print('Starting TestSSL Engine audit...');
+  final results = await engine.execute(
+    target: '192.168.1.1',
+  );
+  
+  print('Audit Complete!');
 }
 ```
 
-## 📄 License
+---
 
-Distributed under the MIT License.
+## 🔒 Security & Privacy
+- **Zero Telemetry:** No analytics, tracking, or network calls home.
+- **Encrypted Local Storage:** Integrates seamlessly with RedOps Hub AES-256 local database.
+- **Thread Safety:** All heavy operations execute inside Dart Isolates to maintain 60fps UI rendering.
 
-## 🤝 Contributing & Support
+---
 
-- **Official Website**: [https://redops-hub.web.app/](https://redops-hub.web.app/)
-- **Main Repository**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
-- **Report Issues**: [https://github.com/AbdoFawzi777/testssl_engine/issues](https://github.com/AbdoFawzi777/testssl_engine/issues)
+## 👤 Author & Copyright
+
+**Abdallah Fawzi Ali Mahmoud**  
+Lead Developer & Security Architect of RedOps Hub  
+- **GitHub:** [@AbdoFawzi777](https://github.com/AbdoFawzi777)  
+- **Telegram:** [@ABdo_FawZi1](https://telegram.me/ABdo_FawZi1)  
+- **Website:** [RedOps Hub Platform](https://redops-hub.web.app)
+
+*Copyright (c) 2026 Abdallah Fawzi Ali Mahmoud. All rights reserved.*
